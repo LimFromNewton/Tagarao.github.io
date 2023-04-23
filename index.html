@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			font-family: Baskerville Old Face;
+			margin: 0;
+			background-image: linear-gradient(#393646,#ED2B2A,#D21312);
+		}
+		.home{
+			text-shadow: 2px 1px black;
+			color: #FF1E1E;
+			}
+		
+		.Pone{
+			font-size:30px;
+			text-shadow: 2px 1px black;
+			color: #FF1E1E;
+			}
+		ul a.active{
+					background-image: linear-gradient(#393646,#ED2B2A,#D21312);
+					color:black;
+					}
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #E5E5CB;
+		}
+
+		li {
+			float: right;
+			}
+		li a {
+			display: block;
+			color: black;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			
+		}
+
+		li a:hover {
+			background-color: #FFD36E;
+		}
+		
+		.slider {
+			width: 100%;
+			height: 597px;
+			overflow: hidden;
+			position: relative;
+		}
+		
+		.slide {
+			display: none;
+			position: absolute;
+			top: 0%;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+		
+		.slide img {
+			width: 70%;
+			height: 100%;
+			padding-left:15%;
+		}	
+		
+
+		.frame{
+				padding-left:19%;
+				}
+				
+		iframe{
+				width:75%;
+				height:500px;
+				border: 5px solid orange;
+				}
+		
+		
+	</style>
+</head>
+<body>
+<ul>
+		<li><a href="index.html" class="active">Home👹</a></li>
+		<li><a href="Plot.html">Plot</a></li>
+		<li><a href="Story.html">Story</a></li>
+		<li><a href="character.html">Characters</a></li>
+		<li><a href="About me.html">About Me</a></li>
+	</ul>
+	
+	</div>
+	
+	<br>
+	<div class="home">
+	<h1 style="text-align:center;">👹Record Of Ragnarok👹</h1>
+	</div>
+	<br>
+	<div class="Pone">
+	<p style="text-align: justify; margin-right:20px;"><strong>Record of Ragnarok</strong>
+			(Japanese: 終末のワルキューレ, Hepburn: Shūmatsu no Warukyūre, lit. "Doomsday Valkyrie") is a Japanese manga
+			series written by Shinya Umemura and Takumi Fukui and illustrated by Ajichika about a fighting tournament featuring prominent
+			historical figures against gods from various mythologies, with the fate of mankind in the balance. It began in Coamix's 
+			(formerly also published by Tokuma Shoten) seinen manga magazine Monthly Comic Zenon in November 2017. It was licensed
+			in North America by Viz Media in June 2021. The manga was adapted as an original net animation (ONA) by Graphinica and
+			premiered on Netflix in June 2021. A second season by Graphinica and Yumeta Company premiered in January 2023.</p>
+	</div>
+		<div class="frame">
+<iframe src="https://www.youtube.com/embed/gcqy5zIUqt8?autoplay=1&loop=1&playlist=gcqy5zIUqt8" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>		</div>
+
+	<br>
+	<div class="slider">
+		<div class="slide">
+			<img src="1.jpg">
+		</div>
+		<div class="slide">
+			<img src="2.webp">
+		</div>
+		<div class="slide">
+			<img src="3.webp">
+		</div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<script>
+		// Slider functionality
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("slide");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) {slideIndex = 1}    
+			slides[slideIndex-1].style.display = "block";  
+			setTimeout(showSlides, 2000); // Change image every 5 seconds
+		}
+		
+		// Responsive navbar functionality
+	
+	</script>
+</body>
+</html>
